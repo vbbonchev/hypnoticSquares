@@ -3,7 +3,6 @@ This is a game in which rotating black/white squares appear in random coordinate
 To score points click on the white squares. All of your clicks on the screen leave a red "shadow". If a black square touches your shadow you lose the game.
 
 So in essence the point of the game is to click on the white squares when they appear and in the meantime hide your "shadow" from the black ones by clicking on empty/corner areas of the screen. The game, of course, speeds up as time goes by in order to make your life miserable.                                                   
-
 # Setup and workflow
 For the setup, there is no need to install Hugo separately, since it should come naturally via `npm`. You can install it only if you want to use the `hugo` command directly from the CLI. You should, however, update your npm to the latest version, especially if you encounter any errors during installation.
 
@@ -94,7 +93,8 @@ The words "Some Prysm-specific content" or nothing, depending on the product we 
 ```
 
 #### Alert
-Creates a warning or a note with a custom starting symbol, usually ">". You can control if you want a warning or a note with the "context" variable
+Creates a warning or a note with a custom starting symbol, usually ">". You can control if you want a warning or a note with the "context" variable.
+
 Example usage: 
 ```
 {{< alert icon=">" context="warning" >}}
@@ -121,7 +121,8 @@ Example result
 </figure>
 ```
 #### Typeref
-This is a special type of reference. It can resolve to different files, depending on the type of documentation we are building. The parameters are title/reference_if_native/reference_if_unity in that order.
+This is a special type of reference. It can resolve to different files, depending on the type of documentation we are building. The parameters are `title`, `reference if native`, `reference if unity` in that order.
+
 Example usage:
 ```
 Go {{< typeref "here" "Somepage_Native.md" "Someotherpage_Unity.md">}}.
